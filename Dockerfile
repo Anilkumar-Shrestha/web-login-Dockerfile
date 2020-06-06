@@ -1,6 +1,6 @@
 FROM alpine:3.7
 
-MAINTAINER Yogesh <yogeshdewangan97@gmail.com>
+MAINTAINER Anil <kumarshresthaanil@gmail.com>
 
 WORKDIR /usr/apps/hello-docker/
 
