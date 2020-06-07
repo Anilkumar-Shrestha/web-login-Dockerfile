@@ -2,7 +2,7 @@ node {
     def app
     
     stage('Clone repository') {
-        git clone 'https://github.com/Anilkumar-Shrestha/web-login-Dockerfile.git'
+        git 'https://github.com/Anilkumar-Shrestha/web-login-Dockerfile.git'
     }
     
     stage('Build Image') {
