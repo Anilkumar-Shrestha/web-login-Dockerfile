@@ -2,7 +2,7 @@ node {
     def app
     
     stage('Clone repository') {
-        git 'https://github.com/Anilkumar-Shrestha/web-login-Dockerfile.git'
+        git clone 'https://github.com/Anilkumar-Shrestha/web-login-Dockerfile.git'
     }
     
     stage('Build Image') {
@@ -16,7 +16,7 @@ node {
     }
     
     stage('Push Image') {
-        docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
+        docker.withRegistry('https://registry.hub.docker.com/', 'dockerhub-credentials') {
             app.push()
         }
     }
